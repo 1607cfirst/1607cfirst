@@ -6,16 +6,168 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/main.min.css">
   </head>
+  <script>
+      window.onload=function() {
+          var oBtn = document.querySelectorAll('#an a');
+          var aDiv=document.querySelectorAll('#zz3 div');
+
+          for(var i=0; i<oBtn.length; i++){
+
+              oBtn[i].onclick=function () {
+
+                  for (var i=0; i<oBtn.length;i++){
+//                          oBtn[i].className="";
+                        alert('aa')
+                          aDiv[i].style.display='block'
+                  }
+
+//                  oBtn[this.index].className='ac';
+//                  aDiv[this.index].style.display='block'
+              }
+
+          }
+
+      }
+  </script>
   <body>
-      <h1>hello</h1>
-      <div class="container">
-          <div class="row">
-            <div class="col-xs-6 block red"></div>
-            <div class="col-xs-6 block red"></div>
-          </div>
-      </div>
+<div class="container-fluid">
+    <div class="row box">
+        <div class="col-md-6 red" id="abc">同城帮首页</div>
+        <div class="col-md-6 oo">
+        <span>登陆</span><span>|</span><span>注册</span><span>|</span><span>我的订单</span><span>|</span>
+            <span>在线客服(9:00-21:00)</span><span>|</span><span>客户服务</span><span>|</span><span>论坛</span>
+            <span>|</span><span>建议投诉</span>
+        </div>
+        <!--<div class="col-md-5 col-lg-5 oo"></div>-->
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 red_1">
+            <img src="http://p1.qhmsg.com/t0182cde8867b60fb47.jpg">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 red_7">请选择故障</div>
+    </div>
+    <!--col-md-offset-2-->
+    <div class="row">
+        <div class="col-md-12 red_2" id="an">
+            <a href="#" index="0"><img src="http://p0.qhmsg.com/t012eb790a758fa2e6c.png"><br>屏幕</a>
+            <a href="#" index="1"><img src="http://p0.qhmsg.com/t0194d1eced2bef5e12.png"><br>电池/充电/开机</a>
+            <a href="#" index="2"><img src="http://p0.qhmsg.com/t01377a06cbd9e741aa.png"><br>按键</a>
+            <a href="#" index="3"><img src="http://p0.qhmsg.com/t01c03b1c4e5c46b774.png"><br>声音/震动</a>
+            <a href="#" index="4"><img src="http://p0.qhmsg.com/t01fd6a5c1614e27c18.png"><br>拍照/录像</a>
+            <a href="#" index="5"><img src="http://p0.qhmsg.com/t016c1523a292f76815.png"><br>外壳/边框</a>
+            <a href="#" index="6"><img src="http://p0.qhmsg.com/t017cc5197fde915b4b.png"><br>进水入液/主板故障</a>
+            <a href="#" index="7"><img src="http://p0.qhmsg.com/t017ef2394d9a6a8400.png"><br>其他故障</a>
+            <a href="#" index="8"><img src="http://p0.qhmsg.com/t012c440d96e78b33cf.png"><br>个性化服务</a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 red_3 ac" id="index">
+            <div>11</div>
+            <div>22</div>
+            <div>33</div>
+            <div>44</div>
+            <div>55</div>
+            <div>66</div>
+            <div>77</div>
+            <div>88</div>
+            <div>99</div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 red_4">邮寄维修很安心</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 red_6 a_4"><img src="https://p.ssl.qhmsg.com/t0197043d213b7245b4.jpg"></div>
+        <div class="col-md-2 red_6 a_1"><img src="https://p.ssl.qhmsg.com/t0155e97b9b8d8289bb.jpg"></div>
+        <div class="col-md-2 red_6 a_2"><img src="https://p.ssl.qhmsg.com/t01f7c5946eeb904191.png"></div>
+        <div class="col-md-2 red_6 a_3"><img src="https://p.ssl.qhmsg.com/t01f7b95b60f82d4493.jpg"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 red_5 b_1"><img src="https://p.ssl.qhmsg.com/t018a0d4ca01a0a7b80.png"></div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12 red_8">
+            <img src="https://p.ssl.qhmsg.com/t0143badb130710aad6.jpg">
+        </div>
+    </div>
+</div>
+    <div id="box">
+        <div class="box-div">
+            <img src="../img/5.png">
+            <div>
+                <h4 >购物指南</h4>
+                <p>购物流程</p>
+                <p>用户注册</p>
+                <p>帮助文档</p>
+
+            </div>
+       </div>
+        <div class="box-div">
+            <img src="../img/4.png">
+            <div>
+                <h4>支付方式</h4>
+                <p>在线支付</p>
+                <p>当面付款</p>
+
+            </div>
+        </div>
+        <div class="box-div">
+            <img src="../img/3.png">
+            <div>
+                <h4>售后服务</h4>
+                <p>投诉建议</p>
+            </div>
+        </div>
+        <div class="box-div">
+            <img src="../img/2.png">
+            <div>
+                <h4>特色保障</h4>
+                <p>360担保支付</p>
+              </div>
+        </div>
+        <div class="box-div">
+            <img src="../img/1.gif">
+            <div>
+                <h4>商家合作</h4>
+                <a href="#"><p>加盟同城帮</p></a>
+                <p>新闻采访/跨界合作</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 red_10">
+            <span>客服电话：4000-399-360/010-53767360<span class="a1">投诉建议</span><span class="a1">网站地图</span></span><br>
+            <span>Copyright © 2005-2017  360.CN  All Rights Reserved  360安全中心</span><br>
+            <span class="a2">京ICP备08010314号-19</span><span>京公网安备110000000006号</span>
+        </div>
+    </div>
+
+    <div id="erweima"><img src="src/sass/zx2.png"></div>
+    <div id="dingbu">
+        <a href="#abc">
+            <p>返</p>
+            <p>回</p>
+            <p>顶</p>
+            <p>部</p>
+        </a>
+    </div>
   </body>
+
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="dist/main.min.js"></script>
+  <script src="dist/index.min.js"></script>
 </html>

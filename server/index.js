@@ -16,9 +16,9 @@ app.get('/',function(req,res){
           res.json(JSON.parse(data))
         }
     })
-})
+});
 
-app.listen(3001,function(){
+app.listen(4444,function(){
   console.log('------服务器启动------')
-  console.log('--访问地址：http://localhost:3001/')
+  console.log('--访问地址：http://localhost:4444/')
 })

@@ -1,0 +1,19 @@
+{
+  "name": "1607ctcb",
+  "version": "1.0.0",
+  "description": "技术点：1/bootstrap\r 2/jquery\r 3/git   github\r 4/gulp 打包\r 5/ swiper\r 6/百度地图\r 7/nodejs 做接口\r 8/pagination 分页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1607ctcb/1607ctcb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1607ctcb/1607ctcb/issues"
+  },
+  "homepage": "https://github.com/1607ctcb/1607ctcb#readme"
+}
