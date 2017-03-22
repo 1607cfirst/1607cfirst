@@ -1,0 +1,123 @@
+{
+"errno": 0,
+"errmsg": "OK",
+"result": [
+{
+"comment_id": "7491",
+"comment_mobile": "133****136",
+"comment_content": "非常满意&nbsp;原装品质",
+"comment_level": "5",
+"comment_create_time": "2017-03-03",
+"is_img": false,
+"product_name": "HTC 【one e8】 电信 4G/3G/2G 白色 16 G 国行 7成新 ",
+"product_img": "http://p0.qhmsg.com/t01868e5b50a91ab173.png",
+"show_buyer_mobile": "133****136",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t01868e5b50a91ab173.png"
+}
+},
+{
+"comment_id": "7490",
+"comment_mobile": "188****010",
+"comment_content": "95新的手机确实很新，外观看起来就跟新的一样，使用起来感觉也不错",
+"comment_level": "5",
+"comment_create_time": "2017-03-03",
+"is_img": true,
+"product_name": "苹果【iPhone 6S】金色 128G 全网通 国行95新 95成新 真机实拍 保修半年",
+"product_img": "http://p0.qhmsg.com/t01c6513b053e67f2e2.jpg",
+"imgs": [
+{
+"img_id": "t0165c28401d49f7c3f.jpg",
+"mini_url": "http://p9.qhmsg.com/dr/120_120_100/t0165c28401d49f7c3f.jpg",
+"big_url": "http://p9.qhmsg.com/t0165c28401d49f7c3f.jpg"
+},
+{
+"img_id": "t0180fb5c868caca5bf.jpg",
+"mini_url": "http://p9.qhmsg.com/dr/120_120_100/t0180fb5c868caca5bf.jpg",
+"big_url": "http://p9.qhmsg.com/t0180fb5c868caca5bf.jpg"
+}
+],
+"show_buyer_mobile": "188****010",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t01c6513b053e67f2e2.jpg"
+}
+},
+{
+"comment_id": "7449",
+"comment_mobile": "183****558",
+"comment_content": "手机很不错，比想象中好，很好用。价格合理，有需要会再来。",
+"comment_level": "5",
+"comment_create_time": "2017-02-28",
+"is_img": false,
+"product_name": "oppo 【A53】 金色 移动 4G/3G/2G 16 G 国行 9成新 真机实拍 保修半年",
+"product_img": "http://p0.qhmsg.com/t012554850e08a032e3.png",
+"show_buyer_mobile": "183****558",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t012554850e08a032e3.png"
+}
+},
+{
+"comment_id": "7448",
+"comment_mobile": "131****675",
+"comment_content": "已收到，很不错，这都接近99新了，6666",
+"comment_level": "5",
+"comment_create_time": "2017-02-28",
+"is_img": true,
+"product_name": "小米 【4C】 全网通 白色 16 G 国行 8成新 ",
+"product_img": "http://p0.qhmsg.com/t01eed7bfedc9cc17e4.png",
+"imgs": [
+{
+"img_id": "t016c0fffbc62724bfe.jpg",
+"mini_url": "http://p2.qhmsg.com/dr/120_120_100/t016c0fffbc62724bfe.jpg",
+"big_url": "http://p2.qhmsg.com/t016c0fffbc62724bfe.jpg"
+},
+{
+"img_id": "t01b3c2f699d8880b12.jpg",
+"mini_url": "http://p2.qhmsg.com/dr/120_120_100/t01b3c2f699d8880b12.jpg",
+"big_url": "http://p2.qhmsg.com/t01b3c2f699d8880b12.jpg"
+},
+{
+"img_id": "t01a668964ee013fc9b.jpg",
+"mini_url": "http://p2.qhmsg.com/dr/120_120_100/t01a668964ee013fc9b.jpg",
+"big_url": "http://p2.qhmsg.com/t01a668964ee013fc9b.jpg"
+},
+{
+"img_id": "t014ffba8040ef8cf24.jpg",
+"mini_url": "http://p2.qhmsg.com/dr/120_120_100/t014ffba8040ef8cf24.jpg",
+"big_url": "http://p2.qhmsg.com/t014ffba8040ef8cf24.jpg"
+}
+],
+"show_buyer_mobile": "131****675",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t01eed7bfedc9cc17e4.png"
+}
+},
+{
+"comment_id": "7446",
+"comment_mobile": "157****251",
+"comment_content": "很棒，很满意！",
+"comment_level": "5",
+"comment_create_time": "2017-02-28",
+"is_img": false,
+"product_name": "苹果 【iPhone6S PLUS】 全网通 金色 16 G 国行9成新 真机实拍 保修半年",
+"product_img": "http://p0.qhmsg.com/t013281eb8e65529e88.png",
+"show_buyer_mobile": "157****251",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t013281eb8e65529e88.png"
+}
+},
+{
+"comment_id": "7444",
+"comment_mobile": "188****067",
+"comment_content": "成色好",
+"comment_level": "5",
+"comment_create_time": "2017-02-28",
+"is_img": false,
+"product_name": "苹果 【iPhone 6 Plus】 全网通 金色 16 G 国行9成新 真机实拍 保修半年",
+"product_img": "http://p0.qhmsg.com/t015987d004d761d59c.jpg",
+"show_buyer_mobile": "188****067",
+"product_info": {
+"product_img": "http://p0.qhmsg.com/t015987d004d761d59c.jpg"
+}
+}
+]

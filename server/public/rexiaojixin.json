@@ -1,0 +1,88 @@
+{
+"errno": 0,
+"errmsg": "OK",
+"result": {
+"product_list": [
+{
+"brand_id": "2",
+"model_id": "261",
+"title": "苹果iPhone 6S",
+"price": 3499,
+"selling_point": "64G大容量，告别存储空间不足",
+"explain": "限时抢购",
+"content": "",
+"link_url": "http://bang.360.cn/liangpin/product?product_id=26870",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01bb82ced2a1049d0d.png",
+"big": "http://p0.qhmsg.com/t0154f41d40bfe51486.png",
+"mid": "http://p0.qhmsg.com/t01976561efd882319d.png",
+"min": "http://p0.qhmsg.com/t0125f73df14c0463c0.png"
+}
+},
+{
+"brand_id": "4",
+"model_id": "549",
+"title": "华为p9",
+"price": 1899,
+"selling_point": "后置1200万徕卡双摄像头",
+"explain": "比新机便宜1000元",
+"content": "",
+"link_url": "http://bang.360.cn/liangpin/search?brand_id=4&model_id=549",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t017e2ba92a328e5b2f.jpg",
+"big": "http://p0.qhmsg.com/t010b5e5895cea28241.jpg",
+"mid": "http://p0.qhmsg.com/t015d1897d337bd5a8f.jpg",
+"min": "http://p0.qhmsg.com/t01c15ac7fd50a8994d.jpg"
+}
+},
+{
+"brand_id": "2",
+"model_id": "97",
+"title": "苹果iPhone 6",
+"price": 1799,
+"selling_point": "最高性价比苹果机",
+"explain": "9成新，5折价",
+"content": "",
+"link_url": "http://bang.360.cn/liangpin/search?brand_id=2&model_id=97",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01a606edbdb3f8a73b.png",
+"big": "http://p0.qhmsg.com/t016301afb4a3071eb2.png",
+"mid": "http://p0.qhmsg.com/t015eddbde5974b8aa3.png",
+"min": "http://p0.qhmsg.com/t0150b8f7749e407958.png"
+}
+},
+{
+"brand_id": "22",
+"model_id": "523",
+"title": "oppoR9",
+"price": 1899,
+"selling_point": "充电5分钟，通话2小时",
+"explain": "限时优惠",
+"content": "",
+"link_url": "http://bang.360.cn/liangpin/search?sort=price_up&brand_id=22&model_id=523",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01b568626f31686dcd.jpg",
+"big": "http://p0.qhmsg.com/t011711194c92fbcb06.jpg",
+"mid": "http://p0.qhmsg.com/t011aed16e9d4f6857e.jpg",
+"min": "http://p0.qhmsg.com/t0105ae151fa6247846.jpg"
+}
+},
+{
+"brand_id": "2",
+"model_id": "98",
+"title": "苹果iPhone 6 Plus",
+"price": 2199,
+"selling_point": "超值大屏机",
+"explain": "限时优惠",
+"content": "",
+"link_url": "http://bang.360.cn/liangpin/search?sort=price_up&brand_id=2&model_id=98",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01314fdc31b1d9276d.jpg",
+"big": "http://p0.qhmsg.com/t012d11975d9d7002d0.jpg",
+"mid": "http://p0.qhmsg.com/t01d8a238765d6366de.jpg",
+"min": "http://p0.qhmsg.com/t0190f0d2c4c4c6d6b7.jpg"
+}
+}
+]
+}
+}

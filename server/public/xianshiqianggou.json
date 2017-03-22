@@ -1,0 +1,97 @@
+{
+"errno": 0,
+"errmsg": "OK",
+"result": {
+"flash_list": [
+{
+"product_id": "27058",
+"product_name": "爆品特惠，保修半年",
+"flash_status": "saling",
+"flash_saling": 1,
+"price": 3399,
+"flash_price": 3288,
+"com_price": "6888",
+"discount": 4.8,
+"title": "苹果 iPhone 6S Plus",
+"subhead": "95成新 16 G 粉色",
+"flash_start_time": "2017-03-13 00:00:00",
+"flash_end_time": "2017-03-16 23:59:59",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01986aefac2d533e24.png"
+}
+},
+{
+"product_id": "2076785910569984",
+"product_name": "三期免息",
+"flash_status": "saling",
+"flash_saling": 1,
+"price": 599,
+"flash_price": 550,
+"com_price": "3088",
+"discount": 1.8,
+"title": "苹果 iPhone 5",
+"subhead": "85成新 16 G 白色",
+"flash_start_time": "2017-03-14 00:00:00",
+"flash_end_time": "2017-03-17 00:00:00",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t01e27ff3769ef9ba6c.jpg"
+}
+},
+{
+"product_id": "2092024493939712",
+"product_name": "官保至2018-02-10",
+"flash_status": "saling",
+"flash_saling": 1,
+"price": 2599,
+"flash_price": 2550,
+"com_price": "4088",
+"discount": 6.2,
+"title": "苹果 iPhone SE",
+"subhead": "9成新 64 G 粉色",
+"flash_start_time": "2017-03-14 00:00:00",
+"flash_end_time": "2017-03-15 23:59:59",
+"thum_img": {
+"old": "http://p0.qhmsg.com/t019c10fee4725c6c9f.jpg"
+}
+},
+{
+    "product_id": "27058",
+    "product_name": "爆品特惠，保修半年",
+    "flash_status": "saling",
+    "flash_saling": 1,
+    "price": 3399,
+    "flash_price": 3288,
+    "com_price": "6888",
+    "discount": 4.8,
+    "title": "苹果 iPhone 6S Plus",
+    "subhead": "95成新 16 G 粉色",
+    "flash_start_time": "2017-03-13 00:00:00",
+    "flash_end_time": "2017-03-16 23:59:59",
+    "thum_img": {
+      "old": "http://p0.qhmsg.com/t01986aefac2d533e24.png"
+    }
+},
+{
+    "product_id": "27058",
+    "product_name": "爆品特惠，保修半年",
+    "flash_status": "saling",
+    "flash_saling": 1,
+    "price": 3399,
+    "flash_price": 3288,
+    "com_price": "6888",
+    "discount": 4.8,
+    "title": "苹果 iPhone 6S Plus",
+    "subhead": "95成新 16 G 粉色",
+    "flash_start_time": "2017-03-13 00:00:00",
+    "flash_end_time": "2017-03-16 23:59:59",
+    "thum_img": {
+      "old": "http://p0.qhmsg.com/t01986aefac2d533e24.png"
+    }
+}
+
+],
+"jingpin_list": [],
+"flashCount": "3",
+"time": "2017-03-15 13:35:44"
+}
+}

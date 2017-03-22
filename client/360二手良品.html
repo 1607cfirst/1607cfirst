@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360同城帮二手精品_zkx</title>
+      <link rel="stylesheet" href="lib/pagination.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="dist/main.min.css">
+     <link rel="stylesheet" href="dist/swipercss/swiper.css">
+</head>
+<body>
+
+  <!--在线咨询-->
+  <div class="gddw">
+      <div class="yc">
+          <div class="xs">
+              <img src="http://p5.qhimg.com/t0113dfdd3937c1f092.png" alt="">
+          </div>
+      </div>
+  </div>
+
+<div class="containner-fluid htop">
+  <div class="container row">
+      <div class="col-md-3">
+          <a href="">同城帮</a>|
+          <a href="">上门服务</a>|
+          <a href="">手机回收</a>|
+          <a href="">二手良品</a>
+      </div>
+      <div class="col-md-4 col-md-offset-5">
+          <a href="">查询订单</a>|
+          <a href="">帮助中心</a>|
+          <a href="">在线客服（9:00-21:00）</a>
+      </div>
+  </div>
+</div>
+
+<!--导航栏-->
+  <header class="containner-fluid">
+      <div class="container row">
+          <a href="" class="col-md-4"><img src="image/logo.gif" alt=""></a>
+          <div class="col-md-5 ccc ">
+              <a href="" class="dq">二手良品</a>
+              <a href="">以旧换新</a>
+              <a href="">手机升级</a>
+              <a href="">企业采购</a>
+          </div>
+          <div class="col-md-3">
+              <input type="text" name="ssnr" id="ssnr">
+              <input type="button" name="kaishiss">
+              <p class="wzc" id="wzc"><span>iPhone6</span><span>iPhone6P</span></p>
+              <div class="wzs" id="wzs">
+                  <p>iPhone6</p>
+                  <p>iPhone6P</p></div>
+          </div>
+      </div>
+  </header>
+
+<!--banner-->
+<div class="swiper-container banner">
+    <!--bannerf-->
+    <div class="containner-fluid bannerf">
+        <div class="container row">
+            <div class="col-md-3">
+                <h5>热门品牌</h5>
+                <div class="rmpp">
+                    <a href="">苹果</a>|
+                    <a href="">三星</a>|
+                    <a href="">华为</a>|
+                    <a href="">小米</a>|
+                    <a href="">戴尔</a>|
+                    <a href="">oppo</a>
+                    <a href="">vivo</a>|
+                    <a href="">魅族</a>|
+                    <a href="">乐视</a>|
+                    <a href="">诺基亚</a>|
+                    <a href="">更多</a>
+                </div>
+                <h5>外观成色</h5>
+                <div class="wgcs">
+                    <a href="">全新</a>|
+                    <a href="">官方翻新</a>|
+                    <a href="">99成新</a>|
+                    <a href="">95成新</a>|
+                    <a href="">9成新</a>
+                    <a href="">85成新</a>|
+                    <a href="">8成新以下</a>
+                </div>
+                <h5>价格预算</h5>
+                <div class="jgys">
+                    <a href="">500元以下</a>|
+                    <a href="">500-1000元</a>|
+                    <a href="">1000-1500元</a>|
+                    <a href="">更多</a>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-7">
+                <a href="http://bang.360.cn/liangpin/desc" class="wmdtd">
+                    <img src="https://p.ssl.qhimg.com/t01309089c890d5d216.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://p.ssl.qhmsg.com/t01058aea3372ebf3a5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://p.ssl.qhmsg.com/t01cc5eaa25ee78c566.png" alt=""></div>
+            <div class="swiper-slide"><img src="http://p.ssl.qhmsg.com/t01e84c0c9f1bbfe76e.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://p.ssl.qhmsg.com/t01da7a921229669fca.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!--bannerbot-->
+<div class="containner-fluid bannert">
+    <div class="container">
+        <div class="swiper-container bant">
+            <div class="swiper-wrapper" id="daojishi"> </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+
+
+<!--物品-->
+<div class="containner-fluid huowu" id="list">
+        <div class="topqh">
+            <a href="">最新上架</a>
+            <a href="">价格↑</a>
+            <a href="http://bang.360.cn/liangpin/mianxi?from=pclp">分期免息</a>
+            <a href="http://bang.360.cn/liangpin/largestorage?from=pclp">超大容量</a>
+            <a href="http://bang.360.cn/liangpin/lowprice?from=pclp">百元特惠</a>
+            <a href="http://bang.360.cn/liangpin/lp_50off_list?from=pclp">5折精品</a>
+            <a href="http://bang.360.cn/liangpin/dell?from=pclp">戴尔笔记本</a>
+        </div>
+
+       <div class="ershouwupin">
+         <div class="h row" id="ershouwupin">
+             <!--   <a href="" class="col-md-1.8">
+                  <div class="tp">
+                      <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+                  </div>
+                  <div class="wz">
+                      <p class="sjxh">苹果 iPhone 6 Plus</p>
+                      <p class="xinjiu">9成新 16G金色</p>
+                      <div class="xjjiage">
+                          <div class="left">￥ <span>2450</span></div>
+                        <div class="r"><span class="youhui">5.5折</span><br><del class="yuanjia">￥6088</del></div>
+                      </div>
+                      <p class="paishe">真机实拍</p>
+                  </div>
+              </a>
+              <a href="" class="col-md-1.8">
+                  <div class="tp">
+                      <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+                  </div>
+                  <div class="wz">
+                      <p class="sjxh">苹果 iPhone 6 Plus</p>
+                      <p class="xinjiu">9成新 16G金色</p>
+                      <div class="xjjiage">
+                          <div class="left">￥ <span>2450</span></div>
+                          <div class="r"><span class="youhui">5.5折</span><br><del class="yuanjia">￥6088</del></div>
+                      </div>
+                      <p class="paishe">真机实拍</p>
+                  </div>
+              </a>
+              <a href="" class="col-md-1.8">
+                  <div class="tp">
+                      <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+                  </div>
+                  <div class="wz">
+                      <p class="sjxh">苹果 iPhone 6 Plus</p>
+                      <p class="xinjiu">9成新 16G金色</p>
+                      <div class="xjjiage">
+                          <div class="left">￥ <span>2450</span></div>
+                          <div class="r"><span class="youhui">5.5折</span><br><del class="yuanjia">￥6088</del></div>
+                      </div>
+                      <p class="paishe">真机实拍</p>
+                  </div>
+              </a>
+              <a href="" class="col-md-1.8">
+                  <div class="tp">
+                      <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+                  </div>
+                  <div class="wz">
+                      <p class="sjxh">苹果 iPhone 6 Plus</p>
+                      <p class="xinjiu">9成新 16G金色</p>
+                      <div class="xjjiage">
+                          <div class="left">￥ <span>2450</span></div>
+                          <div class="r"><span class="youhui">5.5折</span><br><del class="yuanjia">￥6088</del></div>
+                      </div>
+                      <p class="paishe">真机实拍</p>
+                  </div>
+              </a>
+              <a href="" class="col-md-1.8">
+                  <div class="tp">
+                      <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+                  </div>
+                  <div class="wz">
+                      <p class="sjxh">苹果 iPhone 6 Plus</p>
+                      <p class="xinjiu">9成新 16G金色</p>
+                      <div class="xjjiage">
+                          <div class="left">￥ <span>2450</span></div>
+                          <div class="r"><span class="youhui">5.5折</span><br><del class="yuanjia">￥6088</del></div>
+                      </div>
+                      <p class="paishe">真机实拍</p>
+                  </div>
+              </a>-->
+          </div>
+       </div>
+
+      <div class="container huanye" id="container">
+          <div id="Pagination" class="pagination">
+
+          </div>
+      </div>
+</div>
+
+
+<!--热销机型-->
+<div class="containner-fluid rexiaojixing">
+      <h4 class="containner biaoti" >热销机型</h4>
+      <div class="containner row" id="rexiaojixin">
+        <!--  <a href="" class="col-md-2">
+              <div class="tp">
+                  <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+              </div>
+              <div class="wz">
+                  <p class="sjxh">苹果 iPhone 6 Plus</p>
+                  <p class="jies">9成新 16G金色</p>
+                  <p class="xianjia">3499</p>
+                  <p class="leixin">限时抢购</p>
+              </div>
+          </a>
+          <a href="" class="col-md-2">
+              <div class="tp">
+                  <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+              </div>
+              <div class="wz">
+                  <p class="sjxh">苹果 iPhone 6 Plus</p>
+                  <p class="jies">9成新 16G金色</p>
+                  <p class="xianjia">3499</p>
+                  <p class="leixin">限时抢购</p>
+              </div>
+          </a>
+          <a href="" class="col-md-2">
+              <div class="tp">
+                  <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+              </div>
+              <div class="wz">
+                  <p class="sjxh">苹果 iPhone 6 Plus</p>
+                  <p class="jies">9成新 16G金色</p>
+                  <p class="xianjia">3499</p>
+                  <p class="leixin">限时抢购</p>
+              </div>
+          </a>
+          <a href="" class="col-md-2">
+              <div class="tp">
+                  <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+              </div>
+              <div class="wz">
+                  <p class="sjxh">苹果 iPhone 6 Plus</p>
+                  <p class="jies">9成新 16G金色</p>
+                  <p class="xianjia">3499</p>
+                  <p class="leixin">限时抢购</p>
+              </div>
+          </a>
+          <a href="" class="col-md-2">
+              <div class="tp">
+                  <img src="http://p0.qhmsg.com/t011ec40dfc8755a72d.jpg" alt="">
+              </div>
+              <div class="wz">
+                  <p class="sjxh">苹果 iPhone 6 Plus</p>
+                  <p class="jies">9成新 16G金色</p>
+                  <p class="xianjia">3499</p>
+                  <p class="leixin">限时抢购</p>
+              </div>
+          </a>-->
+      </div>
+  </div>
+
+<!--品牌专区-->
+<div class="containner-fluid pinpaizhuanqu">
+    <h4 class="containner biaoti" >品牌专区</h4>
+    <div class="containner nei">
+        <a href=""><img src="https://p.ssl.qhimg.com/t019731e6e194c8869e.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01bb60536824f91a3a.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01c7030b96b23702f8.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01110b63380aa15696.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t012a80236283e8c8fb.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01127ef4cd2922e7b2.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01e98e0549c6bf218e.jpg" alt=""></a>
+        <a href=""><img src="https://p.ssl.qhimg.com/t01be7351d58bbc8700.jpg" alt=""></a>
+    </div>
+</div>
+
+
+<!-- 关注我们-->
+<div class="containner-fluid guanzhuwomen">
+     <div class="containner">
+         <div class="yonghu">
+             <h4>用户晒单</h4>
+             <div class="shaidan" id="shaidan">
+                 <div class="div">
+                     <div class="tp">
+                         <img src="http://p0.qhmsg.com/edr/70__70/ss/30_105/t013281eb8e65529e88.png" alt="">
+                     </div>
+
+                     <div class="yhdpj">
+                         <p>241353245256</p><br>
+                         <p class="wy">地方很艰苦环境的数据库的感觉开会啦管理会计</p>
+                     </div>
+                 </div>
+                 <div class="div">
+                     <div class="tp">
+                         <img src="http://p0.qhmsg.com/edr/70__70/ss/30_105/t013281eb8e65529e88.png" alt="">
+                     </div>
+
+                     <div class="yhdpj">
+                         <p>241353245256</p><br>
+                         <p class="wy">地方很艰苦环境的数据库的感觉开会啦管理会计</p>
+                     </div>
+                 </div>
+                 <div class="div">
+                     <div class="tp">
+                         <img src="http://p0.qhmsg.com/edr/70__70/ss/30_105/t013281eb8e65529e88.png" alt="">
+                     </div>
+
+                     <div class="yhdpj">
+                         <p>241353245256</p><br>
+                         <p class="wy">地方很艰苦环境的数据库的感觉开会啦管理会计</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="yuanwang">
+             <h4>发布愿望</h4>
+             <div class="yw">
+                <h5>愿望还是要有的，万一实现了呢</h5>
+                 <img src="http://p6.qhimg.com/t01b21e2e5ce23558fc.jpg" alt="">
+                 <p>扫码关注写下心愿</p>
+                 <p>心仪手机一旦出现，我们将第一时间通知您</p>
+             </div>
+         </div>
+         <div class="guanzhu">
+             <h4>关注我们</h4>
+             <div class="gz">
+                 <div class="top">
+                     <img src="https://p.ssl.qhmsg.com/t011d66ed7b4673faa5.png" alt="">
+                     <h4>秒抢二手良品</h4>
+                     <p>微信提前上架30分钟</p>
+                     <h4>更早 更快 更方便</h4>
+                 </div>
+                 <div class="center">
+                     <a href=""><img src="https://p.ssl.qhmsg.com/t01bd80d4b935cdd9f7.jpg" alt=""></a>
+                     <h5>关注微博 <span>了解更多二手良品咨询</span></h5>
+
+                 </div>
+                 <div class="bottom">
+                     <h5><img src="https://p.ssl.qhmsg.com/t0192bf7547fba41111.jpg" alt="">良粉福利群：</h5>
+                     <p><span>488049033</span><span>299541811</span><span>436956154</span></p>
+                     <p>凡是加入二手良品粉丝福利QQ群的同学均可享受进群有礼</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+  <!--合作伙伴-->
+<div class="containner-fluid hezuohuoban">
+    <h4 class="containner biaoti" >合作伙伴</h4>
+    <div class="containner nei">
+        <div class="e">
+            <div><img src="https://p.ssl.qhimg.com/t012fe470cf64620117.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01d73675012af74fbf.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t015686224ce3f705b2.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t018aceffd456f1b9cb.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01eec6a688d50336a3.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01a070fcb37c7f99cd.jpg" alt=""></div>
+        </div>
+        <div class="e">
+            <div><img src="https://p.ssl.qhimg.com/t01bd690403d8762fa8.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t0174598c7c24be07df.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01e5ee375d7b9adc36.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01e96a6d2811dc9c77.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01a458403225398fe9.jpg" alt=""></div>
+            <div><img src="https://p.ssl.qhimg.com/t01cd88fdae64d448d4.jpg" alt=""></div>
+        </div>
+
+     </div>
+</div>
+
+<div class="containner-fluid sdasasd"></div>
+<div class="containner-fluid zixun">
+    <div class="containner row">
+        <div class="zx">
+            <!--<img src="https://p.ssl.qhimg.com/t012bbdb4c7d898e765.png" alt="">-->
+            <div></div>
+            <h4>原装品质</h4>
+            <p>原装手机，不修不翻</p>
+        </div>
+        <div class="zx">
+        <div></div>
+            <h4>原装品质</h4>
+            <p>原装手机，不修不翻</p>
+        </div>
+        <div class="zx">
+          <div></div>
+            <h4>原装品质</h4>
+            <p>原装手机，不修不翻</p>
+        </div>
+        <div class="zx">
+           <div></div>
+            <h4>原装品质</h4>
+            <p>原装手机，不修不翻</p>
+        </div>
+        <div class="zx">
+            <h3>4000-399-360</h3>
+            <p>周一至周五 10:00-19:00</p>
+           <span class="">在线咨询</span>
+            <p>或关注微信公众号:bangtc 在线咨询</p>
+        </div>
+    </div>
+</div>
+
+
+<!--底部-->
+<footer>
+      <p>Copyright &copy; 2005-2017 360.CN All Rights Reserved 360安全中心</p>
+      <p>京ICP备08010314号-19 京公网安备110000000006号</p>
+  </footer>
+
+
+</body>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="dist/swiperjs/swiper.min.js"></script>
+<script src="lib/jquery.pagination.js"></script>
+<script src="dist/index.min.js"></script>
+</html>
