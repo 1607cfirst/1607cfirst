@@ -55,7 +55,7 @@ body{
 }
 
 #modal-dialog,#modal-dialog1{
-    width: 500px;
+    width:500px;
     span{
         margin-left: 80px;
         display: inline-block;
@@ -84,8 +84,13 @@ body{
 }
 
 #myModal{
-    left: 300px;
+//  width: 900px;
+    right: 100px;
+    top:12px;
     position: absolute;
+    #modalDialog{
+        width: 600px;
+    }
 }
 #header{
 //  width: 100%;

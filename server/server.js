@@ -116,6 +116,7 @@ app.post('/getlist',function(req,res){
 	
 })
 
+
 //app.get('/success',function(req,res){
 //res.sendFile(__dirname + '/loginsuccess.html')
 //})
@@ -242,6 +243,25 @@ app.get('/computer',function(req,res){
 		
 	})
 })
+
+//地图数据
+
+
+app.get('/mapmarker',function(req,res){
+    fs.readFile(__dirname + '/public/data/map.json',function(err,data){
+        if(err){
+            console.log(err)
+        }else{
+            var json = JSON.parse(data.toString());
+            console.log(json)
+            res.json(json);
+        }
+    })
+})
+
+
+
+
 
 app.listen(5555,function(){
   console.log('------服务器启动------')

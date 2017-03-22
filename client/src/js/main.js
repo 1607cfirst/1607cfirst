@@ -39,9 +39,6 @@ $(function() {
 //   }
 
 
-
-
-
 	//遍历
 	//banner右侧的移入移除
 	$("#uls1 li").mouseover(function() {
