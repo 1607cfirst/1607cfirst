@@ -1,0 +1,87 @@
+{
+	"errno": 0,
+	"errmsg": "OK",
+	"result": [
+		{
+			"product_id": "2092340043193344",
+			"model_name": "iPhone 6 Plus",
+			"brand_id": "2",
+			"brand_name": "苹果",
+			"price": 2699,
+			"com_price": "6088",
+			"model_id": "98",
+			"mer_id": "8",
+			"thum_img": {
+				"old": "http://p0.qhmsg.com/t015987d004d761d59c.jpg",
+				"big": "http://p0.qhmsg.com/t012356c64c53a61eb9.jpg",
+				"mid": "http://p0.qhmsg.com/t010401a0742ed28d54.jpg",
+				"min": "http://p0.qhmsg.com/t01797683ee55e0cafa.jpg"
+			},
+			"mer_name": ""
+		}, {
+			"product_id": "2092018239138816",
+			"model_name": "iPhone 6S",
+			"brand_id": "2",
+			"brand_name": "苹果",
+			"price": 3350,
+			"com_price": "6088",
+			"model_id": "261",
+			"mer_id": "8",
+			"thum_img": {
+				"old": "http://p0.qhmsg.com/t01ac7e90dc7b722260.jpg",
+				"big": "http://p0.qhmsg.com/t01424493481b305dfc.jpg",
+				"mid": "http://p0.qhmsg.com/t01e89c9ebdece92e9d.jpg",
+				"min": "http://p0.qhmsg.com/t0156b5af6f05d75325.jpg"
+			},
+			"mer_name": ""
+		}, {
+			"product_id": "2092231930125312",
+			"model_name": "iPhone 6 Plus",
+			"brand_id": "2",
+			"brand_name": "苹果",
+			"price": 2599,
+			"com_price": "6088",
+			"model_id": "98",
+			"mer_id": "8",
+			"thum_img": {
+				"old": "http://p0.qhmsg.com/t015987d004d761d59c.jpg",
+				"big": "http://p0.qhmsg.com/t012356c64c53a61eb9.jpg",
+				"mid": "http://p0.qhmsg.com/t010401a0742ed28d54.jpg",
+				"min": "http://p0.qhmsg.com/t01797683ee55e0cafa.jpg"
+			},
+			"mer_name": ""
+		}, {
+			"product_id": "2092216966574080",
+			"model_name": "iPhone 6",
+			"brand_id": "2",
+			"brand_name": "苹果",
+			"price": 2399,
+			"com_price": "5288",
+			"model_id": "97",
+			"mer_id": "8",
+			"thum_img": {
+				"old": "http://p0.qhmsg.com/t017cba5fcace0ee0db.png",
+				"big": "http://p0.qhmsg.com/t0180d7542624092d6f.png",
+				"mid": "http://p0.qhmsg.com/t0107f78db3505886a1.png",
+				"min": "http://p0.qhmsg.com/t01feff895c7b9385c4.png"
+			},
+			"mer_name": ""
+		}, {
+			"product_id": "2091991064550400",
+			"model_name": "iPhone 6S",
+			"brand_id": "2",
+			"brand_name": "苹果",
+			"price": 3899,
+			"com_price": "6088",
+			"model_id": "261",
+			"mer_id": "8",
+			"thum_img": {
+				"old": "http://p0.qhmsg.com/t01c6513b053e67f2e2.jpg",
+				"big": "http://p0.qhmsg.com/t0187b033dbdd10668d.jpg",
+				"mid": "http://p0.qhmsg.com/t01ecc14261a7523947.jpg",
+				"min": "http://p0.qhmsg.com/t01b46e3f7eea05304a.jpg"
+			},
+			"mer_name": ""
+		}
+	]
+}

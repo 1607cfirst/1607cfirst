@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>同城帮</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dist/swiper.min.css"/>
+    <link rel="stylesheet" href="lib/pagination.css">
+    <link rel="stylesheet" type="text/css" href="dist/cityselect.css"/>
+    <link rel="stylesheet" href="dist/main.min.css">
+    <style type="text/css">
+    	#container {width:600px; height: 300px; }  
+    </style>
+  </head>
+  <body>
+      
+         <a href="" id='pos'>
+         	  <img src="dist/images/fix_01.png"/>
+         </a>
+      
+      <div class="container-fluid" class="head" id="head">
+      	<!--头栏-->
+          <div class="row" id="header">
+          	 <div class="col-md-3 col-sm-3">
+          	 	  <label id="lab">北京</label>
+          	 	  <!--<a href="">[切换城市]</a>-->
+          	 	  <input type="text" class="cityinput" id="citySelect" placeholder="[切换城市]">
+          	 	  <span></span>
+          	 	  <a href="">[同城帮首页]</a>
+          	 </div>
+          	 
+          	 
+          	 
+          	 <div class="col-md-6 col-md-offset-3 col-sm-6  col-sm-offset-2" id="header-right">
+               <ul>
+                 <li><a href="#" data-toggle="modal" data-target="#tan1" id="first-login">登录</a></li>
+                 <!--<li><a href="#" data-toggle="modal" data-target="#tan1" style="display: none;" id="relogin">已登录</a></li>-->
+                 <li><a href="#"  data-toggle="modal" data-target="#tan">注册</a></li>
+                 <li><a href="#">我的订单</a></li>
+                 <li><a href="#">在线客服(9:00-21:00)</a></li>
+                 <li><a href="#">客户服务</a></li>
+                 <li><a href="#">论坛</a></li>
+                 <li><a href="#" class="on">投诉建议</a></li>
+               </ul>
+          	 </div>
+          </div>
+          
+          
+          <!--注册弹框-->
+         <div class="modal fade" id="tan">
+					<!--modal-dialog 可读性-->
+					<!--modal-lg 改变大小-->
+					<div class="modal-dialog modal-lg" id="modal-dialog">
+						<!--内容部分-->
+						<div class="modal-content">
+							<!--头部-->
+							<div class="modal-header" id="model-header">
+								 <span>欢迎注册360同城帮</span>
+								<!--data-dismiss -->
+								<button class="close" data-dismiss="modal">
+												<span aria-hidden="true">&times;</span>
+											</button>
+							</div>
+					    
+							<!--body部分-->
+							<div class="modal-body">
+								<div class="container">
+									<div class="row">
+										<!--左侧-->
+										<div class="col-sm-1">
+											<ul class="nav nav-pills nav-stacked" role="tablist" id="myTabs">
+											  <li role="presentation" class="active"><a href="#phonepage" aria-controls="phonebtn" role="tab" data-toggle="tab" aria-expanded="true">手机注册</a></li>
+											  <li role="presentation"><a href="#emailpage" aria-controls="emailbtn" role="tab" data-toggle="tab" aria-expanded="false">邮箱注册</a></li>
+											  
+		                  </ul>
+										</div>
+										<!--右侧-->
+										<div class="col-sm-11">
+											<!--手机注册页面-->
+											<div class="tab-content">
+												
+											
+											   <div id="phonepage" role="tabpanel" class="tab-pane active">
+											   	  <form class="form-horizontal" action="http://localhost:5555/regist" method="post">
+														  <div class="form-group">
+														    <label for="inputPhone" class="col-sm-1 control-label">手机号</label>
+														    <div class="col-sm-3">
+														      <input type="phone" class="form-control" id="inputPhone" placeholder="phone" name="name">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <label for="inputPassword3" class="col-sm-1 control-label">密码</label>
+														    <div class="col-sm-3">
+														      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="pwd">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <div class="col-sm-offset-2 col-sm-5">
+														      <button type="submit" class="btn btn-success">马上注册</button>
+														    </div>
+														  </div>
+														  
+														  <div class="form-group">
+														    <div class="col-sm-offset-1 col-sm-4">
+														      <div class="checkbox">
+														        <label>
+														          <input type="checkbox"> 我已阅读并同意<a href="http://i.360.cn/reg/protocol">《360服务条款》</a>
+														        </label>
+														      </div>
+														    </div>
+														  </div>
+														  
+														  
+														</form>
+											   </div>
+											   <!--email注册页面-->
+											   <div id="emailpage" role="tabpanel" class="tab-pane">
+											   	    <form class="form-horizontal" action="http://localhost:5555/regist" method="post">
+														  <div class="form-group">
+														    <label for="inputEmail3" class="col-sm-1 control-label">邮箱</label>
+														    <div class="col-sm-3">
+														      <input type="email" class="form-control" id="inputEmail3" placeholder="phone">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <label for="inputPassword" class="col-sm-1 control-label">密码</label>
+														    <div class="col-sm-3">
+														      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <div class="col-sm-offset-2 col-sm-5">
+														      <button type="submit" class="btn btn-success">马上注册</button>
+														    </div>
+														  </div>
+														  
+														  <div class="form-group">
+														    <div class="col-sm-offset-1 col-sm-4">
+														      <div class="checkbox">
+														        <label>
+														          <input type="checkbox"> 我已阅读并同意<a href="http://i.360.cn/reg/protocol">《360服务条款》</a>
+														        </label>
+														      </div>
+														    </div>
+														  </div>
+														  
+														  
+														</form>
+											   </div>
+											  </div>
+										</div>
+									</div>
+								</div>
+					        
+							</div>
+					
+							<!--尾部-->
+							<div class="modal-footer">
+								
+							</div>
+							<!--content-->
+						</div>
+						<!--modal-dialog-->
+					</div>
+					<!--modal-->
+					</div>
+					
+					
+					
+					
+					<!--登录页面-->
+         <div class="modal fade" id="tan1">
+					<!--modal-dialog 可读性-->
+					<!--modal-lg 改变大小-->
+					<div class="modal-dialog modal-lg" id="modal-dialog1">
+						<!--内容部分-->
+						<div class="modal-content">
+							<!--头部-->
+							<div class="modal-header" id="modal-header1">
+								 <span>欢迎登录360同城帮</span>
+								<!--data-dismiss -->
+								<button class="close" data-dismiss="modal">
+												<span aria-hidden="true">&times;</span>
+											</button>
+							</div>
+					    
+							<!--body部分-->
+							<div class="modal-body">
+								<div class="container">
+									<div class="row">
+										
+										<!--右侧-->
+										<div class="col-sm-12">
+											<!--手机注册页面-->
+											   <div id="phonepage">
+											   	  <form class="form-horizontal" action="" method="">
+														  <div class="form-group">
+														    <label for="use" class="col-sm-1 control-label">账号</label>
+														    <div class="col-sm-3">
+														      <input type="text" class="form-control" id="use" placeholder="手机号/用户名/邮箱" name="user">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <label for="pass" class="col-sm-1 control-label">密码</label>
+														    <div class="col-sm-3">
+														      <input type="password" class="form-control" id="pass" placeholder="请输入你的密码" name="pwwd">
+														    </div>
+														  </div>
+														  
+														  
+														  <div class="form-group">
+														    <div class="col-sm-offset-1 col-sm-4">
+														      <div class="checkbox">
+														        <label>
+														          <input type="checkbox"> 下次自动登录
+														        </label>
+														      </div>
+														    </div>
+														  </div>
+														  
+														  <div class="form-group">
+														    <div class="col-sm-offset-2 col-sm-6">
+														      <button type="submit" class="btn btn-success" id="loginBtn">马上登录</button>
+														    </div>
+														  </div>
+														  
+														  
+														</form>
+											   </div>
+											  
+										</div>
+									</div>
+								</div>
+					        
+							</div>
+					
+							<!--尾部-->
+							<div class="modal-footer">
+								<a href="" id="footer-a1">注册新账号</a>
+								<span></span>
+								<a href="" id="footer-a2">忘记密码？</a>
+							</div>
+							<!--content-->
+						</div>
+						<!--modal-dialog-->
+					</div>
+					<!--modal-->
+					</div>
+          
+      </div>
+
+      <div class="container">
+
+        <!--logo-->
+            <div class="row" id="logo">
+              <div class="col-md-3" id="logo-1e">
+                <img src="src/images/logo.png" alt="" id="img1"/>
+              </div>
+
+              <div class="col-md-7 col-md-offset-2 col-sm-6 col-sm-offset-3"  id="logo-ri">
+              	<img src="https://p.ssl.qhmsg.com/t01198d7629a60c4940.png" alt="" />
+                 <ul>
+                   <li><a href="#" class="a1">二手良品</a></li>
+                   <li><a href="#" class="a1">手机回收</a></li>
+                   <li><a href="#" class="a1">手机维修</a></li>
+                   <li><a href="#" class="a1">电脑维修</a></li>
+                   <li><a href="#" class="a1">以旧换新</a></li>
+                   <li><a href="#" class="a1">手机租用</a></li>
+                 </ul>
+              </div>
+            </div>
+            <!--banner-->
+            <div class="row" id="banner">
+            	 <div class="swiper-container">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide"><img src="dist/images/banner.png"/></div>
+					            <div class="swiper-slide"><img src="dist/images/banner1.png"/></div>
+					            <div class="swiper-slide"><img src="dist/images/banner2.jpg"/></div>
+					            <div class="swiper-slide"><img src="dist/images/banner3.jpg"/></div>
+					            <div class="swiper-slide"><img src="dist/images/banner4.jpg"/></div>
+					            <!-- Add Pagination -->
+					            <div class="swiper-pagination"></div>
+					        </div>
+               </div>
+
+
+
+                   <ul id="uls1">
+
+                     <li class="hover li1"><a href="">修手机/Pad</a><span class="span1 li-sp"></span></li>
+                     <li class="li1"><a href="">修电脑</a><span class="li-sp"></span></li>
+                     <li class="li1"><a href="">卖手机/电脑</a><span class="li-sp"></span></li>
+                     <li class="li1"><a href="">买二手机</a><span class="li-sp"></span></li>
+                   </ul>
+
+
+                    <!--修手机图-->
+                  <div id="pull">
+                    <div id="first-part">
+                    	<dl>
+                    		<dt>
+                    			屏幕&gt;
+                    		</dt>
+                    		<dd>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    		</dd>
+                    	</dl>
+                    	<dl>
+                    		<dt>
+                    			屏幕&gt;
+                    		</dt>
+                    		<dd>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    		</dd>
+                    	</dl>
+                    	<dl>
+                    		<dt>
+                    			屏幕&gt;
+                    		</dt>
+                    		<dd>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    		</dd>
+                    	</dl>
+                    	<dl>
+                    		<dt>
+                    			屏幕&gt;
+                    		</dt>
+                    		<dd>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    			<a>屏幕碎了,但显示正常</a>
+                    		</dd>
+                    	</dl>
+                    </div>
+                    
+                    
+                    <div id="second-part">
+                    	
+                    	<dl id="se-dl1">
+                    		<dt>热门问题</dt>
+                    		<dd id="se-dd1">
+                    			<!--<p>
+	                    			<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+	                    		</p>-->
+                    			
+                    		</dd>
+                    		
+                    	</dl>
+                    	
+                    	<dl id="se-dl2">
+                    		<dt>其他问题</dt>
+                    		<dd id="se-dd2">
+                    			<!--<p>
+                    				<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+	                    			<a href="">省级联动</a>
+                    			</p>-->
+                    			
+                    		
+                    		</dd>
+                    		
+                    	</dl>
+                   
+                    </div>
+                    <div id="thid-part"> 
+                 
+                     <!--<ul>
+                    		<li><a href="">乐视</a></li>
+                    		<li><a href="">oppo</a></li>
+                    		<li><a href="">苹果</a></li>
+                    		<li><a href="">三星</a></li>
+                    		<li><a href="">乐视</a></li>
+                    	</ul>-->
+                    
+                    </div>
+                    
+                    <div id="four-part"> 
+                    	  <!--<ul>
+                    		<li><a href="">三星</a></li>
+                    		<li><a href="">oppo</a></li>
+                    		<li><a href="">苹果</a></li>
+                    		<li><a href="">三星</a></li>
+                    		<li><a href="">乐视</a></li>
+                    	</ul>-->
+                 
+                  </div>
+
+
+         </div>
+
+      </div>
+     </div>
+     <div class="container-fluid" id="second-con">
+       <!--banner下的商品-->
+       <div class="row" id="con-1">
+         <div class="col-md-3">
+           <img src="https://p.ssl.qhmsg.com/t01aad5c130b8653368.jpg"/>
+
+         </div>
+
+         <div class="col-md-3">
+           <img src="https://p.ssl.qhmsg.com/t01dc8f9631026e7e17.jpg" alt="" />
+            <span></span>
+         </div>
+
+         <div class="col-md-3">
+           <img src="https://p.ssl.qhmsg.com/t012b0c32614bcdc13c.jpg"/>
+            <span></span>
+         </div>
+
+         <div class="col-md-3">
+           <img src="https://p.ssl.qhmsg.com/t01fc1fd0e5522663ba.jpg" alt="" />
+           <span></span>
+         </div>
+       </div>
+       
+       <!--热门手机回收--> 
+      <div class="row" id='hot'>
+        <div class="col-md-12">
+            <h3>热门手机回收</h3>
+        </div>
+      </div>
+      <!--图-->
+      <div class='row' id="con-2">
+          <div class="col-md-2">
+            <img src="https://p.ssl.qhmsg.com/t01a10599c63e402740.png"/>
+          </div>
+          <div class="col-md-10">
+             <div class="">
+             	 <a href=""><img src="https://p.ssl.qhmsg.com/t01068fe5e76aa7e910.jpg"/><p>苹果iPhone6</p></a>
+             	 <a href=""><img src="https://p.ssl.qhmsg.com/t01ddf19cbaa3a791b7.jpg"/><p>苹果iPhone5s</p></a>
+             	 <a href=""><img src="https://p.ssl.qhmsg.com/t0154d371a550ee894f.jpg"/><p>小米M4</p></a>
+             	 <a href=""><img src="https://p.ssl.qhmsg.com/t01078047308a85471c.jpg"/><p class="p1">华为mate7</p></a>
+             	 <a href=""><img src="https://p.ssl.qhmsg.com/t01078047308a85471c.jpg"/><p class="p2">魅族MX5</p></a>
+             </div>
+          </div>
+      </div>
+      
+     <!--二手良品精选-->
+     <div class="row" id='second-hand'>
+        <div class="col-md-12">
+            <h3>二手良品精选</h3>
+        </div>
+      </div>
+      <!--图片-->
+      <div class='row' id="con-3">
+         
+         <div class="col-md-2">
+         	 <img src="https://p.ssl.qhmsg.com/t0181716474f1ff8f12.png"/>
+         </div>
+         
+         <div class="col-md-10">
+         	    <div>
+         	    	 <a href="#"><img src="http://p0.qhmsg.com/t016e51220274c96171.jpg"/><p>苹果iPhone6</p><span>￥650</span></a>
+             	   <a href="#"><img src="http://p0.qhmsg.com/t0143bd7e90af3bf4e6.png"  id="con3-img"/><p>小米M4</p><span>￥450</span></a>
+             	   <a href="#"><img src="http://p0.qhmsg.com/t012356c64c53a61eb9.jpg"/><p class="p1">华为mate7</p><span>￥2650</span></a>
+             	   <a href=""><img src="http://p0.qhmsg.com/t016f69585078dac38d.jpg"/><p class="p2">魅族MX5</p><span>￥650</span></a>
+             	   <a href=""><img src="http://p0.qhmsg.com/t01baa1efbf9955cf37.jpg"/><p>华为畅享5</p><span>￥599</span></a>
+         	    </div>
+         </div>
+         
+      </div>
+      <!--到店维修-->
+      <div class="row" id='second-hand'>
+        <div class="col-md-12">
+            <h3>到店维修</h3>
+        </div>
+      </div>
+      
+     </div>
+     
+    <div class="container-fluid" id="three-content">
+    	<!--到店维修内容-->
+      <div class="row" id="content-1">
+      	<!--左侧-->
+      	<div class="col-md-9" id="one-left">
+      		<div class="row">
+      			<div class="col-md-3">
+      				<p class="left-p1">
+      					北京
+      					<span class="caret"></span>
+      				</p>
+      			</div>
+      			<div class="col-md-3">
+      				<p class="left-p1">
+      					选择县区
+      					<span id="p1-sp" class="caret"></span>
+      				</p>
+      				<!--搜索框-->
+      			</div>
+      			<div class="col-md-6">
+      				 <form class="form-inline">
+								  <div class="form-group">
+								    <label class="sr-only" for="search"></label>
+								    <div class="input-group">
+								      <input type="text" class="form-control" id="search" placeholder="输入你的位置查找附近商家">
+								      <div class="input-group-addon" id="seabtn">搜索</div>
+								    </div>
+								  </div>
+								  
+								</form>
+      			</div>
+      		</div>
+      		
+      		<div class="row" id="content-2">
+      			<div class="col-md-10" id="two-l">
+      				<div class="" class="moren" id="moren">
+      					<a  class="">默认程序</a>
+      					<a  class="">按成交量</a>
+      					<a  class="">按成绩</a>
+      					
+      					<input type="checkbox" name="pay" id="pay" value="" />
+      					<label for="pay">先行赔付</label>
+      				</div>
+      			</div>
+      			<div class="col-md-2" id="two-r">
+      				<a href="" data-toggle="modal" data-target="#myModal">
+      					<span></span>
+      					地图模式
+      				</a>
+      			</div>
+      		</div>
+      		
+      		<!--地图-->
+      		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="false">&times;</span><span class="sr-only">Close</span></button>
+					        <h4 class="modal-title" id="myModalLabel">地图模式</h4>
+					      </div>
+					      <div class="modal-body">
+					      	<!--地图-->
+					        <div id="container" tabindex="0"></div>
+					      </div>
+					      <!--<div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>-->
+					    </div>
+					  </div>
+					</div>
+      		
+      		
+      		<div class="row" id="content-3">
+      			 <!--<div class="col-md-12" id="dlbox">
+      			 	   
+      			 	   	<dl>
+      			 	   		<dt><a href=""><img src="http://p7.qhimg.com/edr/140__140/ss/30_105/t01ac02fad9b0458ec4.jpg"/></a></dt>
+      			 	   		<dd>
+      			 	   			 <div id="dd-l">
+      			 	   			 	   <p><a href="">联金诚维修中心</a>&nbsp;店铺等级:<a href="" class="l2"></a></p>
+      			 	   			 	   <p>主营:电脑维修、apple、dell外星人维修电脑配件、路由器…</p>
+      			 	   			 	   <p>地址:北京西城区西直门内大街前桃园1号楼4门底商</p>
+      			 	   			 </div>
+      			 	   			 
+      			 	   			 <div id="dd-r">
+      			 	   			 	   <p>
+      			 	   			 	   	<a href="" class="ra1"></a>
+      			 	   			 	   	<span>先行赔付</span>
+      			 	   			 	   </p>
+      			 	   			 	   <p>
+      			 	   			 	   	<a href="" class="ra2"></a>
+      			 	   			 	   	<span>同城帮认定</span>
+      			 	   			 	   </p>
+      			 	   			 	   <p>
+      			 	   			 	   	人气:99304次浏览
+      			 	   			 	   </p>
+      			 	   			 </div>
+      			 	   			 
+      			 	   		</dd>-->
+      			 	   		
+      			 	   	<!--</dl>-->
+      			 	   <!--进入店铺-->
+      			 	   <!--进入店铺-->
+      			 	   <!--<a href="" id="in-shop">进入店铺</a>-->
+      			 	   
+      			 <!--</div>-->
+      		</div>
+      		
+      		<!--分页-->
+      		<div class="pagination" id="Pagination"></div>
+      		
+      	</div>
+      	
+      	<!--youce-->
+      	<div class="col-md-3" id="one-right">
+      		 <div id="r-con">
+      		 	 <h4>商家好评榜</h4>
+      		 	 <div id="r-con-list">
+	      		 	 <dl>
+	      		 	 	   <dd>
+	      		 	 	   	<p>1</p>
+	      		 	 	   	<div id="">
+	      		 	 	   		<img src="http://p7.qhimg.com/edr/140__140/ss/30_105/t01ac02fad9b0458ec4.jpg"/>
+	      		 	 	   	</div>
+	      		 	 	   	
+	      		 	 	   </dd>
+	      		 	 	   
+	      		 	 	   <dt>
+	      		 	 	   	  <p>联城维修中心</p>
+	      		 	 	   	  <p>121285条评论</p>
+	      		 	 	   	 
+	      		 	 	   </dt>
+	      		 	 </dl>
+	      		 </div> 
+      		 </div>
+      	</div>
+      </div>
+      
+    </div>
+   
+   
+   <!--底部-->
+   <footer class="container-fluid">
+   	<div class="row" id="foot-top">
+   		 <div class="col-md-12">
+   		 	  <dl>
+   		 	  	<dt><img src="dist/images/5.png"/></dt>
+   		 	  	<dd>
+   		 	  		<h3>购物指南</h3>
+   		 	  		<p><a href="">购物指南</a></p>
+   		 	  		<p><a href="">用户注册</a></p>
+   		 	  		<p><a href="">帮助文档</a></p>
+   		 	  	</dd>
+   		 	  </dl>
+   		 	  
+   		 	  <dl>
+   		 	  	<dt><img src="dist/images/4.png"/></dt>
+   		 	  	<dd>
+   		 	  		<h3>支付方式</h3>
+   		 	  		<p><a href="">在线支付</a></p>
+   		 	  		<p><a href="">当面付款</a></p>
+   		 	  	</dd>
+   		 	  </dl>
+   		 	  
+   		 	  <dl>
+   		 	  	<dt><img src="dist/images/2.png"/></dt>
+   		 	  	<dd>
+   		 	  		<h3>售后服务</h3>
+   		 	  		<p><a href="">投诉建议</a></p>
+   		 	  	</dd>
+   		 	  </dl>
+   		 	  
+   		 	  <dl>
+   		 	  	<dt><img src="dist/images/3.png"/></dt>
+   		 	  	<dd>
+   		 	  		<h3>特色保障</h3>
+   		 	  		<p><a href="">360担保支付</a></p>
+   		 	  		
+   		 	  	</dd>
+   		 	  </dl>
+   		 	  
+   		 	  <dl>
+   		 	  	<dt><img src="dist/images/1.gif"/></dt>
+   		 	  	<dd>
+   		 	  		<h3>商家合作</h3>
+   		 	  		<p><a href="" class="a-on">加盟同城帮</a></p>
+   		 	  		<p><a href="">新闻采访/跨界合作</a></p>
+   		 	  		
+   		 	  	</dd>
+   		 	  </dl>
+   		 	  
+   		 </div>
+   	</div>
+   	
+   	<div class="row" id="foot-bom">
+   		 <div class="col-md-12">
+   		 	    <p>客服电话:4000-399-360/010-5376-7360&nbsp; <a href="">投诉建议</a>  &nbsp;<a href="">网站地图</a></p>
+   		 	    <p>copyright &copy; 2005-2017 360.CN All Right Reserved 360安全中心</p>
+   		 	    <p><a href="">京ICP备08010314号-19</a>  京公网备110000000006号 </p>
+   		 </div>
+   	</div>
+   	
+   </footer>
+     
+     <a href="#head" id="return">
+     	<img src="dist/images/return_03.jpg"/>
+   
+     </a>
+  </body>
+  
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="dist/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/jquery.pagination.js"></script>
+  <script type="text/javascript" src="dist/cityselect.js"></script>
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=您申请的key值"></script>
+  <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+  <script src="dist/main.min.js"></script>
+  
+  <script type="text/javascript">
+     var test=new Vcity.CitySelector({input:'citySelect'});
+  	 
+  	 var map = new AMap.Map('container',{
+            resizeEnable: true,
+            zoom: 10,
+            center: [116.480983, 40.0958]
+        });
+  	
+  	
+  </script>
+</html>
